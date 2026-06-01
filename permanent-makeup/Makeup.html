@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Permanent Makeup | Aesthetica Skin Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fed65b",
+                        "on-tertiary-fixed-variant": "#41484c",
+                        "inverse-primary": "#b5c8df",
+                        "on-primary-fixed-variant": "#36485b",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed": "#dce3e8",
+                        "outline-variant": "#c4c6cd",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#a0a7ac",
+                        "outline": "#74777d",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#091d2e",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#96a9be",
+                        "on-surface-variant": "#43474c",
+                        "surface-tint": "#4e6073",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#d1e4fb",
+                        "secondary": "#735c00",
+                        "on-secondary-container": "#745c00",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-background": "#191c1e",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary": "#20272b",
+                        "primary-container": "#2c3e50",
+                        "tertiary-fixed-dim": "#c0c7cc",
+                        "primary-fixed-dim": "#b5c8df",
+                        "inverse-on-surface": "#eff1f3",
+                        "tertiary-container": "#363d41",
+                        "primary": "#162839",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-fixed": "#161d20",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-container-highest": "#e0e3e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .backdrop-blur-nav { backdrop-filter: blur(20px); }
+        .ambient-shadow { box-shadow: 0 10px 40px rgba(44, 62, 80, 0.04); }
+        .text-balance { text-wrap: balance; }
+        .asymmetric-clip { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .hero-gradient { background: linear-gradient(180deg, rgba(22, 40, 57, 0.2) 0%, rgba(22, 40, 57, 0) 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-margin-desktop py-6 max-w-container-max mx-auto bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="font-headline-md text-headline-md text-primary dark:text-inverse-primary tracking-tight">Aesthetica Skin Clinic</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-md rounded-none hover:bg-primary-container transition-all duration-300 scale-95 active:scale-90">Book Appointment</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[819px] min-h-[600px] overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A macro close-up of a high-end permanent makeup procedure on a serene model's face, showcasing perfectly defined eyebrows and soft lip blush. The lighting is bright and clinical yet warm, emphasizing pristine skin texture in a luxurious medical spa environment. The aesthetic is clean, sophisticated, and tranquil, with soft blues and slate tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrbB1Jt4XZVcqHPlMjNneODxeY48kKB8gODcNQNYegLJKcHA64O6Skp582F5XoxmrxFBDmQJTN7868_piQh9voQaGmSbk3qbP42vCtdjTqAoqyg9VdP3lqAlfB_jFUROnfNPoKwREZQN3z4r99LfmmY2Z3zSxU0eZ2KH10uBMtvKo_6bjxG_vv7IAH4LiTt3qM6B0PvKtzXrNAzeG3isS9eiCfITRbOJlze2sG3Y5Q26WC8AdpCOSyhFN6tsBXCjyk7KfMVBLPLug4"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative h-full flex items-center px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-2xl bg-white/40 backdrop-blur-md p-10 md:p-16">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-4 block">Precision Artistry</span>
+<h1 class="font-display-lg text-display-lg md:text-[64px] text-primary mb-6 leading-none">Permanent <br/>Cosmetics</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 text-balance">Enhance your natural features with semi-permanent precision. Dr. Prachi Gupta Garg's signature techniques deliver effortless, timeless results.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 font-label-md hover:bg-primary-container transition-all">Explore Treatments</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Services Bento -->
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary">Masterful Enhancements</h2>
+<div class="w-12 h-[1px] bg-secondary mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Microblading -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px] ambient-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of professionally microbladed eyebrows on a woman with clear skin. The hair strokes are remarkably fine and natural-looking, following the brow's growth pattern. The atmosphere is upscale clinical, with bright, diffused side lighting that highlights the precision of the work. The color palette is composed of soft slates and neutrals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzbefjMKx1FvwPRumR_iBlxsBi-6_8RTJzla3xKeh1U_bwu5t1mIkCzonDJjKr2zlgdGexfcGjndPcNVTrzLXaH2s8_edxcKkv7hABEs2LfFK-zytSHTIfHS-9xNrz0tjLYJgGCtePOnhxKEKYNHpAr3aVumJRFCDrhxTojdgGLj3pdZKtzjC7zyjHA-hcQr7LImASWchbwV5T6pstPUhWd_-cD76A57wURmYqiWPN9GZmA5s_0O9f9N5e5Cx58Bg4CpBlhY0XCSQ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Microblading &amp; Shading</h3>
+<p class="font-body-md opacity-80 mb-6 max-w-md">Feather-light strokes that mimic natural hair for fuller, perfectly defined brows.</p>
+<a class="font-label-md flex items-center gap-2 hover:gap-4 transition-all" href="#">Learn more <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<!-- Lip Blush -->
+<div class="md:col-span-4 group relative overflow-hidden h-[500px] ambient-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautiful model's lips showing a subtle, natural lip blush treatment in a soft dusty rose color. The finish is satiny and smooth, enhancing the natural lip shape without looking artificial. Lighting is high-key and flattering, typical of a high-end aesthetic clinic. The surrounding skin is perfectly clear and glowing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKGl7VNLebV43ZJf38S0ebLzSyV4gllVaPEhWhL1Qq1ciKTSMDbVfwDMxF3qBz3PfYj076PKzu-3S1RV6TUe_X4VDKvq4hm7zns0tlZSEOWwkbqdqLoUKGDMmv4bBUqklQCQ1VbFk8tq1gEEqRomRO8iMn5p3WZ7xVq_-aXjcNIewL5uMMMaTb4PCDZcI_qFUtyYb1_G_4BE1BV7d23KkiXhWzpYDKqWhzo9gpBTbWUeBsGLwfaMdY1mN-RNsK8bB_egJsb4H6D2Ly"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Lip Blush</h3>
+<p class="font-body-md opacity-80">Soft watercolor tint for defined borders and natural color.</p>
+</div>
+</div>
+<!-- Eyeliner -->
+<div class="md:col-span-4 group relative overflow-hidden h-[400px] ambient-shadow">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Macro detail of a precise permanent eyeliner application on a serene eye. The line is thin and enhances the lash base, creating the appearance of thick lashes. The style is modern minimalist with a focus on clinical perfection. Soft, cool lighting emphasizes the professional quality and cleanliness of the procedure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKfJi5mmRUSVQg39zncsdRMvsPWIB1c0lYKi-kAZBBkYCq8RGqtgjTYIwBGDGS2uYdtCGu1ylK-FyirirSSY7xihUlnFGxcoBpxL2Gknt1yggiCusJ7bwOlDX_y3sK-oeyMUm1PhplMQRsl8vbfUxIcI1UeKb7PYtELanZnpRR8wuFbGMwn--mAbHMbXKE8WJZA7e8JL5CnG_gmoI9eRfsEV9ZQN8q-O6efDuAEmLC2t8QSt03U0pq_tK-_QrcRvb2MrYogoCORyIv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Eyeliner</h3>
+<p class="font-body-md opacity-80">Subtle enhancement or bold definition.</p>
+</div>
+</div>
+<!-- Consultation -->
+<div class="md:col-span-8 bg-surface-container-low p-10 md:p-16 flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Bespoke Design Philosophy</h3>
+<p class="font-body-lg text-on-surface-variant mb-8 leading-relaxed">Every procedure begins with a detailed facial analysis and color theory consultation. We don't believe in templates; we believe in enhancing what makes you unique.</p>
+<div class="flex items-center gap-8 border-t border-outline-variant pt-8">
+<div>
+<span class="block font-headline-md text-primary">15+</span>
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px]">Years Exp</span>
+</div>
+<div>
+<span class="block font-headline-md text-primary">5k+</span>
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px]">Successes</span>
+</div>
+<div>
+<span class="block font-headline-md text-primary">100%</span>
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px]">Sterile</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="bg-primary py-section-gap text-on-primary overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-tertiary opacity-20 transform translate-x-1/2 -skew-x-12"></div>
+<div class="px-4 md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<span class="font-label-md text-secondary uppercase tracking-[0.3em] mb-4 block">The Journey</span>
+<h2 class="font-headline-lg text-headline-lg mb-10">A Transformation Grounded in Safety</h2>
+<div class="space-y-12">
+<div class="flex gap-6 group">
+<span class="text-secondary font-headline-md opacity-40 group-hover:opacity-100 transition-opacity">01</span>
+<div>
+<h4 class="font-label-md text-lg mb-2">Consult &amp; Mapping</h4>
+<p class="font-body-md opacity-70">Precise measurements and sketch of your future shape for absolute approval before we begin.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<span class="text-secondary font-headline-md opacity-40 group-hover:opacity-100 transition-opacity">02</span>
+<div>
+<h4 class="font-label-md text-lg mb-2">Painless Application</h4>
+<p class="font-body-md opacity-70">Medical-grade numbing agents ensure maximum comfort throughout the artistry process.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<span class="text-secondary font-headline-md opacity-40 group-hover:opacity-100 transition-opacity">03</span>
+<div>
+<h4 class="font-label-md text-lg mb-2">Refined Aftercare</h4>
+<p class="font-body-md opacity-70">A specialized healing kit and detailed instructions to ensure your results last years.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-full h-full border border-secondary/30"></div>
+<img class="relative w-full h-[600px] object-cover ambient-shadow" data-alt="A clinical but luxurious setting showing an aesthetic practitioner in white scrubs carefully consulting with a patient. The room is modern, bathed in soft morning light, and features minimalist decor and medical-grade equipment. The atmosphere conveys professional trust, safety, and high-end wellness care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgve3ccWgpzc1oGA5lVVz-uh4EKC6-1jLxCAy9SWH_SWsTeTPEN1PTLFmzBbI8qWMcQHxnCiV7ccKkxgz2c_FeUR_bd36zDKP2efbrBgFILP2dDoyYGb4LFuBJSoDJtVfy0IbZHWSkWaQl9f0UjRdHyy9FwG-a4vHVquKa6M_24JXgit7CnW9QFwJ9opoquBsPOSJ90_3UidCMlwWRIryWGd4txr55Lqw-AutJBF9pIcBLbHSRVONkIdvX1-57zlheT_vAt8908Cb9"/>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<blockquote class="font-headline-lg text-headline-lg max-w-4xl mx-auto italic text-primary leading-tight mb-10">
+                "The precision in Dr. Prachi's work is unparalleled. My eyebrows have never looked so natural, and the morning time I save is priceless."
+            </blockquote>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Sophia M." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRqSuT3GGRPq3i4zUd2-cduVxdd9Wni18Pt8I2Vmanm1qZTp0DQsCSlN14_uDjY3VS47DZKO8JV3DVDdo5nc9FEj2avG3EheXyGKlc5CLpSsNiC19YCnJrUV9MkxvovLt2mm9jw8Yiu3Id_mOKcskXwDZra60-XWdL8S0ABa-xhM0xUiDM--xIg-C43JMtoNnZs79p6d7jejibTv2SKrOLOQTXHqmhUD0h_8rKyy-xrLvSBPMgz4ln0SopQbNEKFuZFsdJa43I0kF_"/>
+</div>
+<div class="text-left">
+<p class="font-label-md text-primary">Sophia M.</p>
+<p class="font-body-md text-on-surface-variant text-sm">Microblading Patient</p>
+</div>
+</div>
+</section>
+<!-- Gallery / Visual Results -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary max-w-lg">The Art of the Subtle Reveal</h2>
+<a class="font-label-md text-secondary border-b border-secondary pb-1" href="#">View Full Portfolio</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="space-y-4">
+<img class="w-full aspect-square object-cover ambient-shadow" data-alt="Macro before-and-after style close-up of a permanent makeup brow enhancement. The lighting is clinical and sharp, highlighting the crisp definition of new microbladed strokes against the natural skin. Palette is neutral and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7YxPRfwwyzGE1OPzEQvrlhme63wWgRNRCG3NmElCN_mIOBtN0SyI2IflKq-PQbTQPDUA1b5lh7aZbGL2a-rgTJbKdL_YMFjUCqIhjgh_e2YbAWohfzEsd2gGSvjtec7nKBGRYGuFjhtmMjPjqLJl1mXRwIO1_0mviz8Wf386WxCMklOr6Fw6jGI7KnBJKgu1MhnQWIp5jkn6OWRRH6HYDvf-k-dwjHG_UHFW-m1EAEK0gKyFIOctO9wKq7dBFlfUnCgqkp0tytgzu"/>
+<img class="w-full h-80 object-cover ambient-shadow" data-alt="Close-up of a model's face showing healed lip blush. The results are soft, even, and natural-looking in a soft coral hue. Background is a minimalist, white clinical setting. The overall feel is serene and healthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADBwcbpu4iiVGxQthks_-HeLlehRnGxC39aVOLH6iR8HOO8fgVGX516EYfQGiFSIWdG1MSK4YKf_0l-c2CEMtIOV_oY1b2aOcS0wsWWB0QbtdSHz-cAOtKPHS6rw3mMwmhkoHc00lpHxeINR1dhQ-pzyiFJQCBFrkEnyHtAmnFsJLzIXwS586Ms6YBrkHIp_X0mckQCgkWlT6T2qpxJwbZkbZq8Jw2aHgVe6nrfoQR5jfk2xYP_WXr8pqivgkmRGdEL-tkGJ0K03Vv"/>
+</div>
+<div class="space-y-4 pt-12">
+<img class="w-full h-96 object-cover ambient-shadow" data-alt="Side profile of a woman with expertly done eyeliner and brows, looking tranquil. The lighting is soft and golden-hour inspired, creating a luxury wellness aesthetic. Professional skincare clinic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pwKg9oVHmMxGRPmyglkKs0PCb6WRM9ePT7IbHr7q78_4PToIobOG1L-XX4X4CYhnyofGsoQAzoHu4D2tRrxwGQvcT5kvYH2YlgZrcU1530jkjK1sknhKy175B5-ddQO3g6WYv11Fa_kJebHdu1g_gaIayhxFSPjml0WEp8GHIn04xLRgOAkqAPCY8q75mFKnwL30JhnuN0AR_GuzJEkG-UKBG2ShGwbHeEfOofxLhG_KZNM8-1y2nWurwFgjwGxdLCOjKBAUINMZ"/>
+<img class="w-full aspect-square object-cover ambient-shadow" data-alt="A high-end aesthetic clinic reception area with white marble floors, soft lighting, and curved architectural lines. The environment feels extremely clean, peaceful, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDScPCub1kZbKtPtvQJcOnfvtXVETxeDMsHzvGdEvsP32Ewngk_xuwwGesws3iuLSe-83S0zTcBWIUDC97ucXmRP02-1XLZIXbJzUhAe1ZGKI-eWEdqSKSv34O034lCdcSS37enfV4C4U_0QgDZ5ralKp_LzZc178s_Nc91CFhXlsF9HXfXmzReRK9FWjpWV6eXyRKgKABc_Z-p1MIdRKmlu4iGaUg4PzW-iPFbUFPe0ZeLwklymNlTu5Rgkk-vhg4cwexLvPl0e5G-"/>
+</div>
+<div class="space-y-4">
+<img class="w-full h-80 object-cover ambient-shadow" data-alt="Portrait of a woman with radiant skin and minimalist makeup, showcasing the results of permanent cosmetic treatments. The look is 'no-makeup' makeup, highlighting her natural beauty. Clean, white light-mode aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCeAUcm3u6BybEK53_-N3mSl6TK86EdA0bG5jiscdYJjVPCWa9TTTJbC2rLHbivBnpn5GM5RqWZdUeVaH4TYDx2Bi6KuU3YSxgZEvtQPEI1iRgKjIcGi1g6xViZYsIO3z6F6YEGhGxJRPyHSv1_rHDMMuKfPmAQk0LcaiwwS-mTSMi2S3FxLyNW1LlzRzAyRI6f4DANMPnf7aTmbnKp85aJTMl3Zn0GUxK61v8ntryoQY5d-C2jnSRPRUh4DBU98cW3hWmUVz0rcOM"/>
+<img class="w-full aspect-square object-cover ambient-shadow" data-alt="Extreme close-up on eye with perfect permanent eyeliner. The precision of the line is the main focus, set against clear skin and long lashes. High-key medical-grade lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLfp6iApbgX4bxngfq3LT6tE9tHWEtW98CPkipVKctmR-lBf-1HAFMZYREo8JMqRM2J2sIAMdiibj3xqi85Xc9a0E0z6nHKJBkxqcVhzPgnLo01DkwwUyvXa3NpPgVGm5oAENK83M0gD65oLAZYK80nWVsFAU4WENAnhrnbYNxPK3fJVfVbRk60cz6ZLNx4_UTVOKZdGkrwCCj__b5kIKzHJqZjNsPaIhKoPk9dB5FE72JpGw8AXe04_67nxHK4TQV7kAw1TdvjJz4"/>
+</div>
+<div class="space-y-4 pt-12">
+<img class="w-full h-96 object-cover ambient-shadow" data-alt="A minimalist display of high-end skincare tools and vials on a white marble surface. The lighting is bright and clean, reflecting a professional medical spa's commitment to quality and hygiene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXAzivdAHTFt2dv5xaieBhRH0r-6SROMiiqZxt824okTGphX3BHBQnUe_twtGBoSrEPuJBuQrHVE2jxmzK2VGDeCbd-S7QoLJ1zMyc5cDRB2eqXTcNjKfQewtyzm0-ewCoiEFhPyWXkEp02lY-sWvkE7CFQwph6kKq6KbHxSq-2FJt2kme-XNH6y_v4t34T1J7tRQeZAiihZGXTIVt9AtFxgpddywMGYoSyu4jBZ0MeHEz2U2yuaoZkabEkApNmeq9t3a6q3nwFlME"/>
+<img class="w-full aspect-square object-cover ambient-shadow" data-alt="Abstract soft-focus image of a light, airy clinic interior with warm backlighting. The mood is calm, safe, and sophisticated, emphasizing the emotional serenity of the clinic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnlO2FdQM2JSomsjFEm-vJXlIlh1ytFrGssRpjyDZNmeSy5EEAQc1RFWRTX9UQoiidYrWJDTbTlYLWIvS8tUALIZu39UrpBfeVzPuv_g7gt3XLF5bhIkM1OVPRm0_zN9M1G2jOiQLIxsg3HpnARWLX7kx4pjA2dLbHBpMtTnkgdhPli0Gt74TVO3DDJv4ZXuPkOqeJ00GRyDROBResqcMXGOZG-sFdp_Bz8L6S8b03NnQ8yi0PLfvOxIYsynWypY3XRcHIxo4q7VtJ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking CTA -->
+<section class="py-section-gap px-4 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="bg-primary-container p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-white mb-8">Ready to define your beauty?</h2>
+<p class="font-body-lg text-white/70 mb-12">Join Dr. Prachi Gupta Garg for a personal consultation and discover the artistry of permanent cosmetics.</p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+<div class="space-y-2">
+<label class="font-label-md text-white/60 text-[10px] uppercase">Full Name</label>
+<input class="w-full bg-transparent border-b border-white/20 text-white p-4 focus:ring-0 focus:border-secondary outline-none transition-all placeholder:text-white/20" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-white/60 text-[10px] uppercase">Treatment Type</label>
+<select class="w-full bg-transparent border-b border-white/20 text-white p-4 focus:ring-0 focus:border-secondary outline-none transition-all appearance-none cursor-pointer">
+<option class="text-primary">Microblading</option>
+<option class="text-primary">Lip Blush</option>
+<option class="text-primary">Eyeliner</option>
+</select>
+</div>
+<div class="md:col-span-2 mt-8">
+<button class="w-full bg-secondary text-white py-6 font-label-md uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all">Secure Your Slot</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-4 md:px-margin-desktop bg-surface-container-low dark:bg-tertiary-container border-t border-outline-variant">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<div class="font-headline-md text-headline-md text-primary dark:text-inverse-primary mb-6">Aesthetica Skin Clinic</div>
+<p class="font-body-md text-on-surface-variant">Precision dermatology and aesthetic excellence led by Dr. Prachi Gupta Garg.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h5 class="font-label-md text-primary uppercase mb-6">Services</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary" href="#">Microblading</a></li>
+<li><a class="hover:text-secondary" href="#">Lip Blush</a></li>
+<li><a class="hover:text-secondary" href="#">Skin Rejuvenation</a></li>
+<li><a class="hover:text-secondary" href="#">Dermatology</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-primary uppercase mb-6">Contact</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li>info@aesthetica.clinic</li>
+<li>+91 98765 43210</li>
+<li>New Delhi, India</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-md text-[12px]">
+<p>© 2024 Aesthetica Skin Clinic. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary underline" href="#">Privacy Policy</a>
+<a class="hover:text-primary underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            // Apply fade-in animation to sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
