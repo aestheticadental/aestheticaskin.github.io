@@ -1,1 +1,30 @@
+:root{
 
+  /* Brand Colors */
+  --primary:#162839;
+  --primary-light:#2c3e50;
+
+  --secondary:#d4af37;
+  --secondary-dark:#b8941f;
+
+  --background:#f7f9fb;
+  --surface:#ffffff;
+
+  --text:#191c1e;
+  --text-light:#5f6368;
+
+  /* Layout */
+  --container:1200px;
+
+  /* Fonts */
+  --heading:'Libre Caslon Text', serif;
+  --body:'Manrope', sans-serif;
+
+  /* Radius */
+  --radius:12px;
+
+  /* Shadows */
+  --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}
