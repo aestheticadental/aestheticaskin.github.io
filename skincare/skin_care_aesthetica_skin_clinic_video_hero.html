@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Aesthetica Skin Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed65b",
+                    "on-tertiary-fixed-variant": "#41484c",
+                    "inverse-primary": "#b5c8df",
+                    "on-primary-fixed-variant": "#36485b",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed": "#dce3e8",
+                    "outline-variant": "#c4c6cd",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary-container": "#a0a7ac",
+                    "outline": "#74777d",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-fixed": "#091d2e",
+                    "on-surface": "#191c1e",
+                    "on-primary-container": "#96a9be",
+                    "on-surface-variant": "#43474c",
+                    "surface-tint": "#4e6073",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "primary-fixed": "#d1e4fb",
+                    "secondary": "#735c00",
+                    "on-secondary-container": "#745c00",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-background": "#191c1e",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "surface": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary": "#20272b",
+                    "primary-container": "#2c3e50",
+                    "tertiary-fixed-dim": "#c0c7cc",
+                    "primary-fixed-dim": "#b5c8df",
+                    "inverse-on-surface": "#eff1f3",
+                    "tertiary-container": "#363d41",
+                    "primary": "#162839",
+                    "surface-container-high": "#e6e8ea",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary-fixed": "#161d20",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-container-highest": "#e0e3e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "margin-desktop": "80px",
+                    "section-gap": "120px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"],
+                    "body-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .clinical-shadow {
+            box-shadow: 0 10px 40px rgba(44, 62, 80, 0.04);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-margin-desktop py-6 max-w-container-max mx-auto glass-nav bg-surface/80">
+<div class="font-headline-md text-headline-md text-primary tracking-tight">Aesthetica Skin Clinic</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-md text-label-md rounded-none hover:bg-primary-container transition-all duration-300 scale-95 active:scale-90">
+            Book Appointment
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[870px] flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBJiGlJVrw9Vm3qoiWbT3cxqafXqxiU0wwYIiWA_WRj1ZIF0qbrYyCASADljEs_kVcy8dWu_i4jJUgALX_DsTV8jOW0uZ9JArzPKR57CFe00a65gKmkR-Dw9uu6prrkQNObOdTzwFxFzYk4M7BpimMYceto7M5agdCigB4o-9V6orvUPK6m-3_l44fFpuCrzjqTEEOAxyzx6SD3Q1KFSyguGVxVvOSw1oTNyF5Mpt67azGVTgRkWAlH0TcqgH6qppAy20WaafqQwnfS">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-woman-cleaning-her-face-with-a-cotton-pad-41126-large.mp4" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="inline-block font-label-md text-label-md text-secondary tracking-[0.2em] mb-4">DERMATOLOGICAL EXCELLENCE</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-8 leading-tight">
+                    Advanced Skin <br/>
+<span class="italic font-headline-lg">Therapies</span> &amp; Rejuvenation
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    Discover a personalized journey to radiant health. Led by Dr. Prachi Gupta Garg, we blend medical precision with luxury wellness.
+                </p>
+<div class="flex flex-wrap gap-6">
+<a class="bg-primary text-on-primary px-10 py-5 font-label-md text-label-md transition-all hover:translate-y-[-2px] clinical-shadow" href="#treatments">
+                        Explore Treatments
+                    </a>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-[32px]">clinical_notes</span>
+<span class="font-label-md text-label-md">Clinical Standards Certified</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Treatment Philosophy -->
+<section class="py-section-gap px-6 md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 mb-12 md:mb-0">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover clinical-shadow" data-alt="Close-up of a high-end facial treatment being performed by a professional in a clinical setting. The lighting is soft and flattering, highlighting the skin's natural texture and the precision of the practitioner's movements. The overall mood is peaceful, clean, and restorative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOtFMJPGBnBOauQouEN-eYhg0j7IpLY5YgQaSeDyKBoELuutaDKPxZfMLCk9vgTFZoU_PPAPngGgL1gpDw1sf_qxEdmr1x-kxYw7b4e_KNPbJFRPmDeQneWCcvj2eh8y7yswBznBerYsYSYFwE55hBgApGBca_UiPPyagM6CRPMUMdIe-epCKLhffghVCNOWACCFRxDwKxj-7vVBH6rgoFDrTzvnq1vwp1ZX6Rxch08AfJC0Uj8IKkLq-E4eIXOt-jrKbPBipiJ7Qb"/>
+<div class="absolute -bottom-10 -right-10 hidden lg:block w-64 h-64 bg-secondary-fixed/30 -z-10"></div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">A Precision Approach to <span class="italic">Individual Beauty</span></h2>
+<div class="w-20 h-0.5 bg-secondary mb-8"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                    At Aesthetica, we believe that skin health is the foundation of confidence. Every treatment plan is uniquely crafted, utilizing state-of-the-art diagnostic tools and medical-grade products to achieve measurable, lasting results.
+                </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">verified</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Medical Oversight</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">All procedures are performed or supervised by specialized dermatologists.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1">spa</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Luxury Environment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Designed to provide a serene sanctuary away from the clinical rush.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Services Bento Grid -->
+<section class="pt-section-gap px-6 md:px-margin-desktop overflow-hidden" id="treatments">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Our Procedures</span>
+<h2 class="font-display-lg text-display-lg text-primary">Curated Skin Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Sculpt & Define: Advanced Injectables (Large) -->
+<div class="md:col-span-2 group relative overflow-hidden bg-white clinical-shadow aspect-[16/9]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional anti-aging procedure involving advanced light therapy equipment in a modern dermatological clinic. The lighting is cool-toned and professional, showcasing high-tech medical tools and a serene patient environment. The composition is clean and focused on innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuOf756nnzFMYroS9ERovk1IijXH8qr8UVxPKjPnTSe21DW53X-3hvpgZsHJLzqEmHxzvDMx-mKszTlPFjmGBNrFT-0ueNya5riiG6lPiYCgO7b_wN1eV7kYg_GXtGacRfCrsutJFsBN6nBX5c9i3Wv74y-qF9Ozrc_1BWFYJZTNVvZXLcQ0DXSfMJVblpykj4-X9e_SiOBxTNqRb7L_FB5t95kOtEwq-4nvPXnvTIW2qcdO5xZoJR-g2U_HvBzXxGLyJJUNzUO-IAA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Sculpt &amp; Define: Advanced Injectables</h3>
+<p class="font-body-md opacity-90 max-w-md mb-6">Precision treatments including Botox, Fillers, and HIFU to restore volume and youthful contours.</p>
+<button class="flex items-center gap-2 font-label-md text-label-md border-b border-white pb-1 hover:gap-4 transition-all">
+                            View Procedures <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- The Radiance Protocol -->
+<div class="group relative overflow-hidden bg-white clinical-shadow aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a client receiving a botanical-infused medical facial. Clear glass jars with luxury serums are in the background. The scene is bright and airy, emphasizing natural beauty and high-quality skincare products in a minimalist clinical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnucnqeKc7E2ueu-3G6fafUg7uIvEXt1ZnqQPYnFSaSLtQg8sL-YpF2xUabG-914-2reGIFVChJHb1L1u178agGuSA3j3X2AY3cSCelBAxyQqGq8A2cVE3xxf4TKP883EIhh7Wi1yyh9u-O4ReWQmXWZCYGX9eH8QclVRT8yj-PV2OFbBIQoDBI65-PIWYphD0OG-QgtCN1KtBeZs1EGiPiRXhQu4kvMfPeVTHZE1X1T_XyTLCCXR071SSvVadUPwPJ4gSxGLuH7My"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">The Radiance Protocol: Clinical Facials</h3>
+<p class="font-body-md opacity-90 text-white">HydraFacials and medical-grade peels tailored to your skin type.</p>
+</div>
+</div>
+<!-- Luminous Precision -->
+<div class="group relative overflow-hidden bg-white clinical-shadow aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="State-of-the-art laser skin resurfacing equipment in a clean, professional treatment room. The lighting is crisp and emphasizes the advanced technology used for skin corrections and pigmentation issues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUQV6mKnZlBXr-uX6t3RQ0Eh_uoOl5k4LFVIoeoACSepTcVS1L7VQm_aAXAZFBsbY3AevukSdnUX3C2c2_lCz16sWna15KiJTB-PDjBGcLV5wiRmkZC2SpR8t910zAWD2LOCtisHWrgVa38tZrPSuLQC-YqNPjIe-W3PID9Q1gPJwZAe7YfXbZ0EDCCBmgkSVJNgxJUhXXdt3SlpEA8SHGDF-UTwch-7DaOpkH5yyCaoUqMn0H0z553n69lOFmiHnm7X6TeyHJYwkl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Luminous Precision: Laser Resurfacing</h3>
+<p class="font-body-md opacity-90 text-white">Erase pigmentation and scars with targeted light therapy.</p>
+</div>
+</div>
+<!-- Precision Lesion & Mole Removal -->
+<div class="group relative overflow-hidden bg-white clinical-shadow aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Clinical dermatological procedure for precise mole removal in a sterile, modern medical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNBPNYJT20WmUOXtb5RtbHH_F7gd3GUo4DzhDOO4t5Fcy9TXLacklRungZCwKGLFEr72VaeXc0dMcOpvys3w6aiLK-5b8hqWmSiDi7lcFxv0FiY1USnK5R92LzeoVnzyOFvBZIbj7TaihAApDMsqlnAtfl16_Y_S43uJIRgvpMldvNRmoAHUkyAOUCBkuMWX4nKEErJEdCLZ6Oua-E8mUdE28w4qld3ZUMfnI71rFIGQDvnsj0dejUm4zNCOxLEgGdWQkPmBKCSi2K"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Precision Lesion &amp; Mole Removal</h3>
+<p class="font-body-md opacity-90 text-white">Safe and precise clinical removal of moles with minimal scarring.</p>
+</div>
+</div>
+<!-- Therapeutic Dermatology -->
+<div class="group relative overflow-hidden bg-white clinical-shadow aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Specialist examining a patient's skin for inflammatory conditions and allergic reactions in a high-end clinic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcBNspU4zMaGkVgLgfNZTP-YgkK7Mw05ZFY_95F186MBostk_FiSS8lJwnOFIWJCQPtlpRhNVEs549h1DttbwTBUey6cWuTQfj-zcXJknCD5NAAp3DD3z5YUwHozvttdEmS9W2VvrcUdm0ozhl9301EPaXTMu9seK8zL7d0xylG2wMWFG9d5TbD0D941agUiP9UAikTqiKWsFhF0xA4ftFSu8hAtmxjFru6OqIM471Fu5I-Nrbei3BuOmq3HRYCqCOn_gOcnUrhZ5y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Therapeutic Dermatology: Itching &amp; Rash Solutions</h3>
+<p class="font-body-md opacity-90 text-white">Diagnosis and treatment for chronic itching and inflammatory conditions.</p>
+</div>
+</div>
+<!-- The Resurfacing Suite -->
+<div class="group relative overflow-hidden bg-white clinical-shadow aspect-square">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a professional chemical peel application in a luxury aesthetic clinic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfeWQ03JsA8VEJwuX8s2aCHBvfpj0ERdRJ7r2PIAi47bN4pmH5frPXA82YjlWHrx4Suyq95-YzC9oyD-q3H-gPJKqu3Obtl2zKhG9ZvbjgIUPaNIqAewrdFquNezWBu9bos5ufoopjL-2wmi-3Rpd6zSgGqoBKkpy7N4MX_vXG6bVy78P227BFl4UYeLUqiyx35cBeD-LrmYuH5RoxiDIf88EIIHVkqMl5PXHKMc23zG73pr23b8MompT4ryRuerNodWgfqSx4Igim"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">The Resurfacing Suite: Medical Peels</h3>
+<p class="font-body-md opacity-90 text-white">Medical-grade treatments tailored to your skin type to improve texture.</p>
+</div>
+</div>
+<!-- Bespoke Formulations -->
+<div class="md:col-span-2 group relative overflow-hidden bg-white clinical-shadow aspect-[16/9]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bespoke luxury skincare bottles arranged on a clean marble surface in a clinical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4-MWhoPghemS2fGb8j8YXgbJTITe7lGC14QI23HjILAf8ZfVPvO-9o8YK6gTRd9tYhyYYFRUdH83Eh-cIm6MXXe7y1qcXaiJ7WzDbfrmcdLnmB6ojLQEmeaP2DDFirzu2ckp7JI607KYfdg-yaD9rIBOgelfPHxSsWbHC5N60O82iU-da7G7z0udJ6yijJgK6_YyYTD8JKHuReegjBvu1kqZM7p4fNRFo4uFsWHpS-i-2NB6p_CVNnOjqZkF0ouOcoE2O-gEZtN77"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-80 transition-opacity group-hover:opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Bespoke Formulations: Tailored Skincare</h3>
+<p class="font-body-md opacity-90 max-w-md mb-6">Custom skincare formulations designed for your unique skin profile and clinical goals.</p>
+<button class="flex items-center gap-2 font-label-md text-label-md border-b border-white pb-1 hover:gap-4 transition-all">
+                            Explore Bespoke Range <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-section-gap px-6 md:px-margin-desktop bg-surface-container">
+<div class="max-w-container-max mx-auto text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="max-w-3xl mx-auto">
+<blockquote class="font-headline-md text-headline-md text-primary mb-8 italic">
+                    "The results after my chemical peel series were transformative. Not just for my skin, but for my self-confidence. Dr. Garg and the entire staff provide a level of care that is truly unparalleled."
+                </blockquote>
+<div class="w-12 h-0.5 bg-secondary mx-auto mb-4"></div>
+<cite class="font-label-md text-label-md text-on-surface uppercase tracking-widest block not-italic">Elena Moretti</cite>
+<span class="font-body-md text-on-surface-variant">Advanced Rejuvenation Patient</span>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap px-6 md:px-margin-desktop bg-tertiary">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-6">Frequently Asked <span class="italic">Questions</span></h2>
+<p class="text-on-tertiary-container font-body-lg mb-12">We believe in transparent care. Here are some common questions our patients ask before their first clinical session.</p>
+<img class="w-full aspect-square object-cover opacity-80" data-alt="A portrait of a serene woman with glowing skin, representing the ideal result of professional skincare treatments. The background is soft and minimalist, focusing on the clarity and health of the complexion, shot with professional high-key lighting for a luxury clinic feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkLv-0HGTB6fTDb-fxPznfBbhl9634FmMmip644VjYSE6taHCYvsJhvobIxZgLoWg0bbM9vHK59iKLWQr4UF2H1CQwzL4SBTePTtJQvfVKQ94lvqi3D_jIADHmkDBe22Ib1vlo2Nh0IHNpic7hQX80Q704uV3H7nL9ytBFqcGljjBFbbEnRnCB7hj85yUr5HPzTLL_7yO3w4yFzN3MKqRc7XV7VyvSPTCdgHT48CkHMXRNOROxfxojm9YYBbcpsM04UYXwFXLqX-qr"/>
+</div>
+<div class="space-y-4">
+<!-- Accordion Items -->
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group" onclick="toggleAccordion(0)">
+<span class="font-headline-md text-[20px] text-white group-hover:text-secondary-fixed-dim transition-colors">How long do treatments typically take?</span>
+<span class="material-symbols-outlined text-white" id="icon-0">expand_more</span>
+</button>
+<div class="hidden pr-12 transition-all duration-300" id="content-0">
+<p class="font-body-md text-tertiary-fixed-dim pb-4">Most clinical facials and laser sessions take between 45 to 90 minutes. We recommend arriving 15 minutes early for consultation.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group" onclick="toggleAccordion(1)">
+<span class="font-headline-md text-[20px] text-white group-hover:text-secondary-fixed-dim transition-colors">Is there any downtime after facials?</span>
+<span class="material-symbols-outlined text-white" id="icon-1">expand_more</span>
+</button>
+<div class="hidden pr-12 transition-all duration-300" id="content-1">
+<p class="font-body-md text-tertiary-fixed-dim pb-4">Standard facials have zero downtime. Advanced chemical peels or laser treatments may have 2-5 days of mild redness or flaking.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group" onclick="toggleAccordion(2)">
+<span class="font-headline-md text-[20px] text-white group-hover:text-secondary-fixed-dim transition-colors">Are the treatments safe for sensitive skin?</span>
+<span class="material-symbols-outlined text-white" id="icon-2">expand_more</span>
+</button>
+<div class="hidden pr-12 transition-all duration-300" id="content-2">
+<p class="font-body-md text-tertiary-fixed-dim pb-4">Absolutely. We perform a comprehensive skin analysis before every treatment to adjust intensity and product selection for sensitive skin types.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="w-full flex justify-between items-center text-left py-4 focus:outline-none group" onclick="toggleAccordion(3)">
+<span class="font-headline-md text-[20px] text-white group-hover:text-secondary-fixed-dim transition-colors">How soon will I see results?</span>
+<span class="material-symbols-outlined text-white" id="icon-3">expand_more</span>
+</button>
+<div class="hidden pr-12 transition-all duration-300" id="content-3">
+<p class="font-body-md text-tertiary-fixed-dim pb-4">Immediate 'glow' is visible after most facials. For corrective treatments like pigmentation removal, best results are seen after 3-5 sessions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-section-gap px-6 md:px-margin-desktop bg-primary-fixed/20 relative overflow-hidden">
+<div class="absolute left-0 bottom-0 opacity-5 -mb-20 -ml-20">
+<span class="material-symbols-outlined text-[400px]">spa</span>
+</div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-display-lg text-display-lg text-primary mb-6">Book your <br/><span class="italic">consultation</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Join us for a detailed assessment of your skin health and receive a bespoke treatment roadmap tailored for your unique needs.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="font-label-md text-label-md text-primary">+1 (555) 890-2341</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<span class="font-label-md text-label-md text-primary">120 Aesthetic Plaza, Midtown</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-10 clinical-shadow">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Full Name</label>
+<input class="w-full border-none border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary py-3 transition-colors" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Phone Number</label>
+<input class="w-full border-none border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary py-3 transition-colors" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Primary Skin Concern</label>
+<select class="w-full border-none border-b border-outline-variant bg-transparent focus:ring-0 focus:border-primary py-3 transition-colors">
+<option>Anti-Aging</option>
+<option>Acne &amp; Scarring</option>
+<option>Pigmentation</option>
+<option>General Wellness Facial</option>
+<option>Other</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label-md text-label-md tracking-widest hover:bg-primary-container transition-all">
+                            SEND REQUEST
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-6 md:px-margin-desktop bg-surface-container-low flex flex-col md:flex-row justify-between items-start border-t border-outline-variant">
+<div class="mb-10 md:mb-0">
+<div class="font-headline-md text-headline-md text-primary mb-6">Aesthetica Skin Clinic</div>
+<p class="font-body-md text-on-surface-variant max-w-xs mb-8">
+                Providing expert dermatological care through a lens of luxury and scientific precision.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center border border-outline rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-outline rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">EXPLORE</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About</a></li>
+<li class=""><a class="font-body-md text-primary underline transition-colors" href="#">Services</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Our Experts</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">FAQ</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6">LEGAL</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Location</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full mt-16 md:mt-0 md:hidden border-t border-outline-variant pt-10">
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 Aesthetica Skin Clinic. All rights reserved.</p>
+</div>
+</footer>
+<div class="hidden md:flex w-full px-margin-desktop py-8 bg-surface-container-low justify-between border-t border-outline-variant">
+<p class="font-label-md text-label-md text-on-surface-variant">© 2024 Aesthetica Skin Clinic. All rights reserved.</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Designed for Clinical Excellence</p>
+</div>
+<script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            
+            const isOpen = !content.classList.contains('hidden');
+            
+            // Close all
+            for(let i=0; i<4; i++) {
+                const el = document.getElementById(`content-${i}`);
+                if (el) el.classList.add('hidden');
+                const ic = document.getElementById(`icon-${i}`);
+                if (ic) ic.innerText = 'expand_more';
+            }
+            
+            // Toggle current
+            if(!isOpen) {
+                content.classList.remove('hidden');
+                icon.innerText = 'expand_less';
+            }
+        }
+    </script>
+</body></html>
